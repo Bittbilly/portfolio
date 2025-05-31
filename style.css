@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--cor1:#942911;
+--cor2:#577399;
+--cor3:#736F4E;
+--cor4:#DAEDBD;
+--cor5:#646536;
+--cor6:#315fa0a9;
+--black:#000;
+--white:#fff;
+
+--font1: 'Courier New', Courier, monospace;
+--font2: 'Arial', sans-serif;
+--font3: 'Times New Roman', Times, serif;
+--font4: 'Georgia', serif;
+}
+ body {
+            font-family: var(--font2);
+            background: var(--cor2);
+            color: var(--white);
+            line-height: 1.6;
+        }
+        
+header {
+            background: var(--cor6);
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 3px;
+        }
+        header p {
+            font-size: 1rem;
+            color: var(--white);
+        }
+        main {
+            max-width: 900px;
+            margin: 1rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background-color: var(--cor6);
+            border-radius: 5px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.486);
+        }
+        section {
+
+            
+            box-shadow: 0 2px 8px rgba(34, 40, 49, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+
+        }
+        .section-title {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+
+        }
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+
+        }
+        .tech-item {
+         
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            color: var(--secondary);
+            font-size: 1rem;
+            transition: 0.2s;
+         
+        }
+        .tech-item:hover {
+            background: var(--cor6);
+            color: #fff;
+            box-shadow: 0 0px 16px rgba(1, 179, 189, 0.418);
+            transition: 0.2s;
+        
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        
+        }
+        .project-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem;
+            transition: box-shadow 0.2s;
+        }
+        .project-card:hover {
+            box-shadow: 0 0px 16px rgba(1, 180, 189, 0.199);
+            border-color: var(--accent);
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            border: #00000021 solid 1px;
+            background-color:#00000021 ;
+            padding: 0.5rem;
+            border-radius:  4px 4px 0px 0px;
+        }
+        .project-desc {
+            font-size: 0.98rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            background-color: #0000000e;
+            border-radius: 0px 0px 4px 4px;
+            padding: 0.5rem;
+             border: #00000021 solid 1px;
+        }
+        .project-link {
+            color: #c4c4c4;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            font-family: var(--font4);
+        }
+        .project-link:hover {
+            color: var(--cor3);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            font-size: 1rem;
+            background: var(--bg);
+            color: var(--primary);
+            resize: none;
+        }
+        .contact-form button {
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: var(--primary);
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 0 0.5rem;
+            }
+            section {
+                padding: 1rem;
+            }
+        }
