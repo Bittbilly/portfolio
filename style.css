@@ -229,10 +229,20 @@ header {
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: background 0.2s;
+            transition: 0.2s;
         }
         .contact-form button:hover {
-            background: var(--primary);
+            background: var(--cor2);
+
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: var(--cor6);
+            color: var(--white);
+            font-size: 0.9rem;
+            position: relative;
+            bottom: 0;
         }
         @media (max-width: 600px) {
             main {
